@@ -15,8 +15,4 @@ public class LandingPageObject {
     public String getWidgetTitle(){
         return driver.findElement(widgetTitle).getText();
     }
-
-    public LandingPageObject(){
-        this.getWidgetTitle();
-    }
 }
