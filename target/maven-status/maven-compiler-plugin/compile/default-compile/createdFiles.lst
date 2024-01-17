@@ -1,2 +1,4 @@
+pro/utorg/LandingPageObject.class
 baseClases/RandomEmail.class
 baseClases/StatusCodesCheckingUTP.class
+pro/utorg/CookiesPopup.class
