@@ -2,6 +2,7 @@ package pro.utorg;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import pro.utorg.signIn.EmailPageObject;
 
 public class LandingPageObject {
     private WebDriver driver;
@@ -13,6 +14,7 @@ public class LandingPageObject {
     private By utaBanner = By.xpath("//div[@class='banner']");
     private By headerLogo = By.xpath("//a[@class='header_logo']");
     private By headerMenu = By.xpath("//div[@class='header_menu']");
+    private By loginButton = By.xpath("//a[@class='button variant-button']");
     private By widgetTitle = By.xpath("//div[@class='widgetTitle']");
     private By widget = By.xpath("//div[@class='widget']");
     private By landingTitle = By.xpath("//h1");
@@ -46,6 +48,11 @@ public class LandingPageObject {
     public LandingPageObject headerMenuVisibility() {
         driver.findElement(headerMenu).isDisplayed();
         return this;
+    }
+
+    public EmailPageObject loginButtonClick() {
+        driver.findElement(loginButton).click();
+        return new EmailPageObject(driver);
     }
 
     public LandingPageObject widgetTitleVisibility() {
