@@ -20,6 +20,7 @@ public class CheckAllElementsOnTheLandingPageTest {
 
     @Before
     public void before() {
+        System.out.println("The 'Check All Elements On The Landing Page Tests' run starts");
         driver.manage().window().setSize(webScreen);
         driver.get("https://utorg.pro");
     }

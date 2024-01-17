@@ -16,9 +16,8 @@ public class LandingStatusCodesTest {
 
     @Before
     public void before(){
-
+        System.out.println("The 'Landing Status Codes Tests' run starts");
     }
-
     @Test
     public void test1_statusCodesChecking() throws IOException {
         statusCodesCheckingUTP.getStatus();
